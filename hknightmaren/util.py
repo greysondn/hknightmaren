@@ -77,6 +77,8 @@ class HkCommandCollection():
         
 class HkVotingBooth():
     def __init__(self):
+        self.VALID_OPTIONS = ["0", "1", "2", "3"]
+        
         self.pollsOpen:bool  = False
         self.active:bool     = False
         self.votes:list[int] = [0, 0, 0, 0]
