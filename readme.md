@@ -1,4 +1,4 @@
-HK Nightmaren
+HKnight Maren
 =============
 
 Twitch Hollow Knight integration voting/auto execution bot.
