@@ -21,6 +21,8 @@ class Bot(commands.Bot):
         '''currently possile random commands'''
 
     async def event_message(self, message: Message) -> None:
+        await super().event_message(message)
+        
         if (message.content in self.vote.VALID_OPTIONS):
             self.vote.castVote(str(message.content), str(message.author.name))
 
@@ -30,7 +32,7 @@ class Bot(commands.Bot):
         print(f'User id is | {self.user_id}')
 
     @commands.command()
-    async def start(self, ctx: commands.Context):
+    async def hello(self, ctx: commands.Context):
         # Send a hello back!
         await ctx.send(f'Hello {ctx.author.name}!')
         
@@ -58,7 +60,7 @@ class Bot(commands.Bot):
                 option = self.hkcommands.getRandom()
             
                 # print option data into chat
-                await ctx.send(f"{i} - {option.name} - {option.chatString}")
+                await ctx.send(f"{i} - {option.name} - {option.description}")
                 
                 # add option to the voting booth
                 self.vote.options.append(option)

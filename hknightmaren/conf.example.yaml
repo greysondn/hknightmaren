@@ -1,0 +1,74 @@
+# oauth access token for bot
+token: ""
+
+# channel bot is to join on start
+channel: ""
+
+
+# list of commands to load into voting mechanism
+commands:
+    -
+        chatString:     "!ax2uBlind"
+        name:           Blind Player
+        description:    Makes every room look like you need a lantern
+        delay:          60
+    -
+        chatString:     "!conveyor"
+        name:           Conveyor Belt Surfaces
+        description:    All surfaces act like conveyor belts
+        delay:          60
+    -
+        chatString:     "!godmode"
+        name:           God Mode
+        description:    Unsure. We hope it makes player invincible.
+        delay:          60
+    -
+        chatString:     "!jumplength"
+        name:           Random Jump Length
+        description:    Randomizes player's jump length, giving them a controllable jump length and distance.
+        delay:          60
+    -
+        chatString:     "!jumpspeed"
+        name:           Random Jump Speed
+        description:    Gives the player a random initial jump speed, giving them a hard to control random jump height and distance.
+        delay:          60
+    -
+        chatString:     "!lifeblood"
+        name:           Give player Lifeblood
+        description:    Gives player a random amount of extra health
+        delay:          40
+    -
+        chatString:     "!limitSoul"
+        name:           Uncap Soul Limit
+        description:    Unsure. We think it temporarily fixes soul limit after dying.
+        delay:          60
+    -
+        chatString:     "!nopogo"
+        name:           Disable pogo
+        description:    Removes knockback from hitting things with nail
+        delay:          60
+    -
+        chatString:     "!overflow"
+        name:           Soul Overflow
+        description:    Gives the player a single filling of more soul than they can technically carry.
+        delay:          40
+    -
+        chatString:     "!sleep"
+        name:           Faceplant
+        description:    Make player do a faceplant
+        delay:          60
+    -
+        chatString:     "!timescale 0.75"
+        name:           Wuff Speed
+        description:    Set timescale to 3/4
+        delay:          120
+    -
+        chatString:     "!timescale 1.33"
+        name:           Wuff Handicap
+        description:    Set timescale to 1.3 
+        delay:          120
+    -
+        chatString:     "!wind"
+        name:           Wind
+        description:    Makes wind randomly blow the player around.
+        delay:          180
