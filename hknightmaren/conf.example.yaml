@@ -13,14 +13,109 @@ commands:
         description:    Makes every room look like you need a lantern
         delay:          60
     -
+        chatString:     "!bees"
+        name:           NOT THE BEES
+        description:    Spawns Hive Knight Bees. Endlessly..?
+        delay:          6000
+    -
+        chatString:     "!bindings"
+        name:           Enable Bindings
+        description:    Temporarily limits player abilities.
+        delay:          300
+    -
+        chatString:     "!cameffect flip"
+        name:           Flip Camera
+        description:    Flips the player's camera view.
+        delay:          10
+    -
+        chatString:     "!cameffect mirror"
+        name:           Mirror Camera
+        description:    Mirrors the player's camera
+        delay:          10
+    -
+        chatString:     "!cameffect nausea"
+        name:           Nauseate Camera
+        description:    Gives a nauseating effect to player camera
+        delay:          10
+    -
+        chatString:     "!cameffect pixelate"
+        name:           Pixelate Camera
+        description:    Pixelates the player's camera
+        delay:          10
+    -
+        chatString:     "!communism"
+        name:           Communism
+        description:    Sets all enemies in current room to HP of median enemy in room.
+        delay:          120
+    -
         chatString:     "!conveyor"
         name:           Conveyor Belt Surfaces
         description:    All surfaces act like conveyor belts
         delay:          60
     -
+        chatString:     "!dashLength"
+        name:           Randomize Dash Length
+        description:    Gives the player a random dash length
+        delay:          60
+    -
+        chatString:     "!dashSpeed"
+        name:           Randomize Dash Speed
+        description:    Gives the player a random dash speed
+        delay:          60
+    -
+        chatString:     "!dashVector"
+        name:           Randomize Dash Direction
+        description:    Randomizes which direction the player's dash points for each direction.
+        delay:          60
+    -
+        chatString:     "!doubledamage"
+        name:           Double Damage
+        description:    Makes the player take double damage from all sources
+        delay:          60
+    -
+        chatString:     "!float"
+        name:           Levitate
+        description:    The player levitates and can't get down.
+        delay:          180
+    -
+        chatString:     "!geo"
+        name:           Geo Explosion
+        description:    Knocks back player with a random amount of geo.
+        delay:          400
+    -
         chatString:     "!godmode"
         name:           God Mode
         description:    Unsure. We hope it makes player invincible.
+        delay:          60
+    -
+        chatString:     "!gravity 0.200"
+        name:           Moon gravity
+        description:    Set gravity coefficient for player as close to moon as possible.
+        delay:          120
+    -
+        chatString:     "!gravity 0.379"
+        name:           Martian Gravity
+        description:    Sets gravity coefficient for player to match Mars
+        delay:          120
+    -
+        chatString:     "!gravity 0.905"
+        name:           Venusian Gravity
+        description:    Set gravity coefficient for player to match Venus
+        delay:          120
+    -
+        chatString:     "!hwurmpU"
+        name:           Hwurmp
+        description:    Overlays player's sprite with Hwurmp sprite.
+        delay:          300
+    -
+        chatString:     "!invertcontrols"
+        name:           Invert controls
+        description:    Inverts player's controls
+        delay:          60
+    -
+        chatString:     "!jars"
+        name:           Spawn Collector Jars
+        description:    Spawns 5 collector jars from ceiling
         delay:          60
     -
         chatString:     "!jumplength"
@@ -33,6 +128,11 @@ commands:
         description:    Gives the player a random initial jump speed, giving them a hard to control random jump height and distance.
         delay:          60
     -
+        chatString:     "!lasers"
+        name:           Lasers
+        description:    Summons Crystal Peak lasers over the player's head.
+        delay:          60
+    -
         chatString:     "!lifeblood"
         name:           Give player Lifeblood
         description:    Gives player a random amount of extra health
@@ -43,15 +143,135 @@ commands:
         description:    Unsure. We think it temporarily fixes soul limit after dying.
         delay:          60
     -
+        chatString:     "!nailscale 0.5"
+        name:           Shortnail
+        description:    Halves the length of the nail.
+        delay:          120
+    -
+        chatString:     "!nailscale 2"
+        name:           Longnail
+        description:    Doubles the length of the nail
+        delay:          120
+    -
+        chatString:     "!nailscale 4"
+        name:           Greatnail
+        description:    Quadruples the length of the nail
+        delay:          120
+    -
         chatString:     "!nopogo"
         name:           Disable pogo
         description:    Removes knockback from hitting things with nail
         delay:          60
     -
+        chatString:     "!orb"
+        name:           Spawn Orb
+        description:    Spawns a homing orb to chase the player.
+        delay:          2
+    -
         chatString:     "!overflow"
         name:           Soul Overflow
         description:    Gives the player a single filling of more soul than they can technically carry.
         delay:          40
+    -
+        chatString:     "!respawn"
+        name:           Respawn
+        description:    Move player to respawn as though they'd fell into a hazard
+        delay:          120
+    -
+        chatString:     "!revek"
+        name:           Spawn Revek
+        description:    Spawns Revek on a timer. Can be parried away.
+        delay:          240
+    -
+        chatString:     "!Salubra"
+        name:           Salubra's Blessing
+        description:    Player gains constant soul regen.
+        delay:          30
+    -
+        chatString:     "!setText Bling"
+        name:           Set Text to Bling
+        description:    Sets a significant amount of ingame text to Bling
+        delay:          80
+    -
+        chatString:     "!setText Bork"
+        name:           Set Text to Bork
+        description:    Sets a significant amount of ingame text to Bork
+        delay:          80
+    -
+        chatString:     "!setText HEY LISTEN"
+        name:           Set Text to HEY LISTEN
+        description:    Sets a significant amount of ingame text to HEY LISTEN
+        delay:          80
+    -
+        chatString:     "!setText Nice"
+        name:           Set Text to Nice
+        description:    Sets a significant amount of ingame text to Nice
+        delay:          80
+    -
+        chatString:     "!setText Nifty"
+        name:           Set Text to Nifty
+        description:    Sets a significant amount of ingame text to Nifty
+        delay:          80
+    -
+        chatString:     "!setText Snoot"
+        name:           Set Text to Snoot
+        description:    Sets a significant amount of ingame text to Snoot
+        delay:          80
+    -
+        chatString:     "!setText Steel"
+        name:           Set Text to Steel
+        description:    Sets a significant amount of ingame text to Steel
+        delay:          80
+    -
+        chatString:     "!setText Toebeans"
+        name:           Set Text to Toebeans
+        description:    Sets a significant amount of ingame text to Toebeans
+        delay:          80
+    -
+        chatString:     "!slaphand"
+        name:           Heavy Blow
+        description:    Gives player's nail a lot of knockback
+        delay:          120
+    -
+        chatString:     "!sfxRando"
+        name:           Randomize Sound Effects
+        description:    Randomizes all sound effects.
+        delay:          180
+    -
+        chatString:     "!slippery"
+        name:           Ice Floors
+        description:    Makes all horizontal surfaces frictionless.
+        delay:          60
+    -
+        chatString:     "!spawn aspid"
+        name:           Spawn Aspid
+        description:    Spawns an aspid on the player's screen
+        delay:          20
+    -
+        chatString:     "!spawn buzzer"
+        name:           Spawn Buzzer
+        description:    Spawns a buzzer on the player's screen
+        delay:          20
+    -
+        chatString:     "!spikefloor"
+        name:           Spawn NKG Spikes
+        description:    Spawns a spike attack from the floor in the room
+        delay:          1
+    -
+        chatString:     "!spawn roller"
+        name:           Spawn Roller
+        description:    Spawns a roller on the player's screen
+        delay:          20
+    -
+        chatString:     "!spawnshade"
+        name:           Spawn Shade
+        description:    Spawns the player's death shade (no extra penalties)
+        delay:          60
+    -
+        chatString:     "!spawnpv"
+        name:           Spawn Weak Pure Vessel
+        description:    Spawns a quarter-health pure vessel
+        delay:          360
     -
         chatString:     "!sleep"
         name:           Faceplant
@@ -68,7 +288,72 @@ commands:
         description:    Set timescale to 1.3 
         delay:          120
     -
+        chatString:     "!toggle claw"
+        name:           Toggle Claw
+        description:    Toggle Claw
+        delay:          240
+    -
+        chatString:     "!toggle dash"
+        name:           Toggle Dash
+        description:    Toggle Dash
+        delay:          240
+    -
+        chatString:     "!toggle dnail"
+        name:           Toggle Dream Nail
+        description:    Toggle Dream Nail
+        delay:          240
+    -
+        chatString:     "!toggle nail"
+        name:           Toggle Nail
+        description:    Toggle Nail
+        delay:          240
+    -
+        chatString:     "!toggle superdash"
+        name:           Toggle Superdash
+        description:    Toggle Superdash
+        delay:          240
+    -
+        chatString:     "!toggle tear"
+        name:           Toggle Tear
+        description:    Toggle Tear
+        delay:          240
+    -
+        chatString:     "!toggle wings"
+        name:           Toggle Wings
+        description:    Toggle Wings
+        delay:          240
+    -
+        chatString:     "!triplejump"
+        name:           Triple Jump
+        description:    Give the player triple jump. Wings are enabled.
+        delay:          1
+    -
+        chatString:     "!walkspeed 0.5"
+        name:           Snail's Pace
+        description:    Halves the player's walk speed
+        delay:          180
+    -
+        chatString:     "!walkspeed 2"
+        name:           Double Pace
+        description:    Doubles the player's walk speed
+        delay:          180
+    -
+        chatString:     "!walkspeed 4"
+        name:           Cheetah's Pace
+        description:    Quadruples the Walk Speed
+        delay:          180
+    -
+        chatString:     "!walkspeed 10"
+        name:           Sonic's Pace
+        description:    GOTTA GO FAST!
+        delay:          180
+    -
         chatString:     "!wind"
         name:           Wind
         description:    Makes wind randomly blow the player around.
         delay:          180
+    -
+        chatString:     "!zap"
+        name:           Zap
+        description:    Lightning balls trail the player.
+        delay:          30
