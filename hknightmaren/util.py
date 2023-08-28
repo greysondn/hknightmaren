@@ -74,3 +74,48 @@ class HkCommandCollection():
     def addWithCallback(self, command:HkCommand):
         self.add(command)
         command.onTimer = self.createAddCallback(command)
+        
+class HkVotingBooth():
+    def __init__(self):
+        self.pollsOpen:bool  = False
+        self.active:bool     = False
+        self.votes:list[int] = [0, 0, 0, 0]
+        self.voters:list[str] = []
+        self.options:list[HkCommand] = []
+        
+    def stopVoting(self):
+        self.pollsOpen = False
+        
+    def startVoting(self):
+        self.pollsOpen = True
+        
+    def castVote(self, vote:str, voter:str):
+        if (self.pollsOpen):
+            if (voter not in self.voters):
+                self.votes[int(vote)] += 1
+                self.voters.append(voter)
+    
+    def newVote(self):
+        self.options = []
+        self.voters = []
+        self.votes = [0, 0, 0, 0]
+    
+    def tallyVotes(self) -> HkCommand:
+        # this should have been done externally, but just to be extra sure
+        self.stopVoting()
+        
+        # get first entry with max votes
+        maxVal = max(self.votes)
+        ind    = self.votes.index(maxVal)
+        
+        # pop out voted for command option
+        ret = self.options.pop(ind)
+        
+        # run the timer end for the other options
+        # this should return it to the options list, unexecuted
+        # but if you futzed with it, this is a good point to check for breakage
+        for option in self.options:
+            option.onTimer()
+        
+        # return
+        return ret
